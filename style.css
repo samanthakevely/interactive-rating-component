@@ -1,0 +1,28 @@
+/*
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Orange500: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 100%, 100%);
+    --Grey500: hsl(217, 12%, 63%);
+    --Grey900: hsl(213, 19%, 18%);
+    --Grey950: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--Grey950);
+}
+
+#rating-container {
+    background-color: var(--Grey900);
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+    
+*/
