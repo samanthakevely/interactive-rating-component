@@ -22,6 +22,8 @@ The designs were created to the following widths:
 - Grey 900: hsl(213, 19%, 18%)
 - Grey 950: hsl(216, 12%, 8%)
 
+Grey 900: rgb(37, 45, 55)
+
 ## Typography
 
 ### Body Copy
