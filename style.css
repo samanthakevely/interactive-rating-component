@@ -65,7 +65,7 @@ p {
     margin-bottom: 20px;
 }
 
-#rating-bottuns {
+#rating-buttons {
     display: flex;
     justify-content: space-between;
 
@@ -75,11 +75,22 @@ p {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: var(--Botton);
-    color: var(--Grey500);
     font-weight: 700;
     border: none;
     margin-bottom: 20px;
+    background-color: var(--Botton);
+    color: var(--Grey500);
+}
+
+.rating-btn.active {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-weight: 700;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--White);
+    color: var(--Grey950);
 }
 
 #submit-btn {
@@ -94,6 +105,7 @@ p {
     font-weight: 700;
 
 }
+
 
 /*Thank you state start*/
 
@@ -129,7 +141,7 @@ p {
 
 
 @media screen and (min-width: 992px) {
-    .rating-btn:hover {
+    .rating-btn:not(.active):hover  {
         background-color: var(--Orange500);
         color: var(--Grey950);
     }
