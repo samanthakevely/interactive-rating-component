@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive rating component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is my solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). This project helped me practice DOM manipulation, JavaScript interactions, and responsive layouts using a mobile-first workflow.
 
 ## Table of contents
 
@@ -34,13 +34,6 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -51,46 +44,59 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Built with
 
-- Semantic HTML5 markup
+- Semantic HTML5
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- JavaScript DOM manipulation
+- Media queries
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+During this project, I practiced several important JavaScript concepts for front-end development, especially DOM manipulation and interactive UI behavior.
 
-To see how you can add code snippets, see below:
+I learned how to:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+- Select HTML elements with JavaScript
+- Use data-* attributes
+- Add and remove CSS classes dynamically
+- Use loops to update multiple elements
+- Store user selections in variables
+- Show and hide sections dynamically
+- Update HTML content with textContent
+
+One part I was proud of was creating the active button selection system:
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+let rating = ''
+
+function selected(button) {
+    rating = button.dataset.value
+
+    let allButtons = document.querySelectorAll('.rating-btn')
+
+    for (let btn of allButtons) {
+        btn.classList.remove('active')
+    }
+
+    button.classList.add('active')
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I also learned more about CSS specificity and how the order of CSS rules affects which styles are applied.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I want to continue improving:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- JavaScript logic and DOM manipulation
+- Responsive layouts
+- CSS organization and naming
+- Interactive components
+- Accessibility best practices
+
+I also want to start practicing cleaner JavaScript structure without inline onclick attributes.
 
 ### Useful resources
 
@@ -101,24 +107,23 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+I used ChatGPT during this project mainly for:
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+- Understanding JavaScript concepts
+- Debugging logic issues
+- Learning how loops and DOM selection work
+- Improving CSS behavior and responsive layouts
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+The most helpful part was receiving explanations and guidance without getting the complete solution immediately, which helped me think through the problems myself.
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@samanthakevely](https://www.frontendmentor.io/profile/samanthakevely)
+- Instagram - [@samanthakevely](https://www.instagram.com/samanthakevely/)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
