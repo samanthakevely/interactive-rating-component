@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Interactive rating component](https://www.frontendmentor.io/solutions/responsive-interactive-rating-component-with-html-css-and-javascript-T0BpMgU0Lq)
 - Live Site URL: [Rating Page](https://rating-page-samantha.netlify.app/)
 
 ## My process
